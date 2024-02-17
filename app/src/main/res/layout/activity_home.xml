@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E2F2F"
+    android:padding="10sp"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/frontmage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="400dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_bubblesort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Bubble Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_insertionsort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_selectionsort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Selection Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_shortestPath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_insertionsort" />
+
+    <Button
+        android:id="@+id/btn_insertionsort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Insertion Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_selectionsort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bubblesort" />
+
+    <Button
+        android:id="@+id/btn_Heapsort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Heap Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Quicksort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_Mergesort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Merge Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_shortestPath"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Quicksort" />
+
+    <Button
+        android:id="@+id/btn_Quicksort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Quick Sort"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Mergesort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Heapsort" />
+
+    <Button
+        android:id="@+id/btn_shortestPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Shortest Path using BFS"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dfsTraversal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dfsTraversal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="#000000"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="DFS Traversal"
+        android:textColor="#E3DADA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
